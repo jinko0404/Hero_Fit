@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히어로핏</title>
+    <link rel="stylesheet" href="./base_no_login.CSS">
+    <style>
+        #main{
+            text-align: center;
+        }
+        #orderInfo{
+            background-color: lightgray;
+            width: 500px;
+            padding: 20px;
+            padding-bottom: 30px;
+            margin:0 auto; 
+            
+        }
+            #orderInfo #div1{
+                width: 80px;
+                display: flex;
+                float: left;
+                margin-right: 20px;
+            }
+            #orderInfo #div2{
+                width: 300px;
+                display: flex;
+            }
+            #orderInfo #div3{
+                width: 100px;
+                display: flex;
+                float: left;
+                margin-right: 20px;
+            }
+            #orderInfo #div4{
+                position: relative;
+                top: 7px;
+            }
+            #backMain{
+                margin: auto;
+                display: block;
+                width: 160px;
+                height: 60px;
+                font-size: 20px;
+                font-weight: 700;
+                background-color: #99CCFF;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="1.main.html">
+                    <h1>HERO FIT</h1>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="품목 및 브랜드 명으로 검색해주세요">
+                <a href="#">
+                    <img src="./img/free-icon-magnifier-2866321.png" alt="검색" id = "search_icon">
+                </a>
+                </div>
+            <div class="mainMenu">
+                <ul id ="mainMenu">
+                    <li><a href="./2.store.html">스토어</a></li>
+                    <li><a href="./2.community/6.community.html">커뮤니티</a></li>
+                    <li><a href="./3.FQA/7.FQA.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="loginMenu">
+                <ul id="loginMenu">
+                    <li><a href="./8.login.html">로그인</a></li>
+                    <li><a href="./9.signUp.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+        <hr width ="100%">
+        <main>
+            <div id="main">
+                <h1>주문완료</h1>
+                <p style="font-size: 25px;">
+                    아래 계좌 정보로 입금해 주시면<br>
+                    결제 완료 처리가 됩니다.
+                </p>
+            </div>
+            <div id = "orderInfo">
+                <h3>입금 계좌 안내</h3>
+                한국은행<br>
+                계좌번호 : 12-345678-90-123 <br>
+                12,500원
+                <hr>
+                주문번호 1234567890
+                <hr>
+                <div style="font-size: 25px;" id = "div1">배송지</div>
+                <div id = "div2">
+                    로니콜먼<br>
+                    010-1234-1234 <br>
+                    서울시 서울구 서울로 서울길 서울<br>
+                    서울층 서울호
+                </div>
+                <hr>
+                <div style="font-size: 25px;" id = "div3">배송방법</div>
+                <div id = "div4">
+                    택배
+                </div>
+            </div>
+            <br>
+            <a href="./1.main.html"><button id = "backMain">홈으로</button></a>
+            <br>
+        </main>
+        <hr width ="100%">
+        <footer>
+            상호 : (주)히어로 핏 | 사업자 등록 번호 : 000-00-00000 | 대표전화 : 7777-7777<br>
+            주소 : 서울특별시 강남구 테헤란로 14길 6 남도빌딩 3층
+        </footer>
+    </div>
+</body>
+</html>

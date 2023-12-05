@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히어로핏</title>
+    <link rel="stylesheet" href="./base_no_login.CSS">
+    <link rel="stylesheet" href="./product.CSS">
+    <style>
+        .pc-top-categories {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .pc-top-categories-items {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+                row-gap: 12px;
+                column-gap: 11px;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .pc-top-categories-item {
+                flex: 0 0 calc((100% / 7) - 11px);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: calc((100% / 7) - 11px);
+                height: 40px;
+                margin: 0;
+                padding: 0;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            .pc-top-categories-item > a {
+                flex: 1 1 auto;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0 0 0 15px;
+                background: rgba(243,243,243,1);
+                box-sizing: border-box;
+            }
+            .pc-top-categories-item > a:hover {
+                background: rgba(243,243,243,0.7);
+            }
+            .pc-top-categories-item > a::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 5px;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background: #dbdbdb;
+            }
+            .pc-top-categories-item > a > span {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 120%;
+                color: #333;
+            }
+            .pagination {
+            display: inline-block;
+            }
+                .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                border-radius: 5px;
+                }
+                    .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                    border-radius: 5px;
+                    transition: background-color .3s;
+                    border: 1px solid #ddd;
+                    }
+                    .pagination a:hover:not(.active) {background-color: #ddd;}
+                    .center {
+                    text-align: center;
+                    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="1.main.html">
+                    <h1>HERO FIT</h1>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="품목 및 브랜드 명으로 검색해주세요">
+                <a href="#">
+                    <img src="./img/free-icon-magnifier-2866321.png" alt="검색" id = "search_icon">
+                </a>
+                </div>
+            <div class="mainMenu">
+                <ul id ="mainMenu">
+                    <li><a href="./2.store.html">스토어</a></li>
+                    <li><a href="./2.community/6.community.html">커뮤니티</a></li>
+                    <li><a href="./3.FQA/7.FQA.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="loginMenu">
+                <ul id="loginMenu">
+                    <li><a href="./8.login.html">로그인</a></li>
+                    <li><a href="./9.signUp.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+        <hr width ="100%">
+        <main>
+            <div class="pc-top-categories-items">
+                <img src="./img/storeMenu.png" alt="storeMenu" width="40px" height="40px">
+            <div class="pc-top-categories-item"><a href="./2-1.store_AuxiliaryTools-page1.html"><span>보조도구</span></a></div>
+            <div class="pc-top-categories-item"><a href="./2-2.store_protein-page1.html"><span>보충제</span></a></div>
+            <div class="pc-top-categories-item"><a href="./2-3.store_fitnessEquipment.html"><span>헬스기구</span></a></div>
+            <div class="pc-top-categories-item"><a href="./2-4.store_dietFood-page1.html"><span>다이어트 식품</span></a></div>
+            <div class="pc-top-categories-item"><a href="./2-5.store_newProduct.html"><span>신상품</span></a></div>
+            </div>
+            <h2>메인</h2>
+            <hr>
+            <div class="product-container">
+                <!-- 1행 -->
+                <div class="product-row">
+                    <!-- 제품 1 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/fitnessEquipment/3229_main_082.gif" alt="머신" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">바디엑스 BK-3000F</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">1,423,500 원</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 제품 2 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/fitnessEquipment/3232_main_05.jpg" alt="머신" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">멀티벤치프레스 PBH2</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">129,000 원</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 제품 3 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/fitnessEquipment/3723_main_036.jpg" alt="머신" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">파워 로잉 머신</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">99,000 원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- 추가 행과 제품들 ... -->
+            </div>
+            
+                <!-- 2행 -->
+                <div class="product-row">
+                    <!-- 제품 1 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/chicken/0050010019722.jpg" alt="닭가슴살" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">칠리 닭가슴살 7팩</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">12,000 원</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 제품 2 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/chicken/p_chokchok_10all.jpg" alt="닭가슴살" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">수비드 닭가슴살 15팩</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">27,600 원</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 제품 3 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/chicken/p_iqf_3all.jpg" alt="닭가슴살" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">생 닭가슴살 600g</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">10,990 원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <!-- 1행 -->
+                    <div class="product-row">
+                        <!-- 제품 4 -->
+                        <div class="product-item">
+                            <a href="./3.productPage.html" class="product-image-link">
+                                <img src="./img/lunchBox/0010020021362.jpg" alt="도시락" width="300px" height="300px" />
+                            <div class="product-details">
+                                    <div id = "Pname">반칙도시락</div>
+                            </a>
+                                <div class="price">
+                                    <span class="discounted-price">4,000 원</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- 제품 2 -->
+                        <div class="product-item">
+                            <a href="./3.productPage.html" class="product-image-link">
+                                <img src="./img/lunchBox/0060070000092.jpg" alt="도시락" width="300px" height="300px" />
+                            <div class="product-details">
+                                    <div id = "Pname">식단관리 도시락</div>
+                            </a>
+                                <div class="price">
+                                    <span class="discounted-price">4,000 원</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- 제품 3 -->
+                        <div class="product-item">
+                            <a href="./3.productPage.html" class="product-image-link">
+                                <img src="./img/lunchBox/0060120000082.jpg" alt="도시락" width="300px" height="300px" />
+                            <div class="product-details">
+                                    <div id = "Pname">포르미 저지방 도시락</div>
+                            </a>
+                                <div class="price">
+                                    <span class="discounted-price">4,000 원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 추가 행과 제품들 ... -->
+                </div>
+            
+            </div>
+            <div class="center">
+                <div class="pagination">
+                    <a href="2.store-page5.html" class="disabled">&lt;&lt; Previous</a>
+                    <a href="2.store.html">1</a>
+                    <a href="2.store-page2.html">2</a>
+                    <a href="2.store-page3.html">3</a>
+                    <a href="2.store-page4.html">4</a>
+                    <a href="2.store-page5.html">5</a>
+                    <a href="2.store-page6.html"class="active">6</a>
+                    <a href="2.store-page7.html">7</a>
+                    <a href="2.store-page7.html">Next &gt;&gt;</a>
+                </div>
+            </div>
+            
+        </main>
+        <hr width ="100%">
+        <footer>
+            상호 : (주)히어로 핏 | 사업자 등록 번호 : 000-00-00000 | 대표전화 : 7777-7777<br>
+            주소 : 서울특별시 강남구 테헤란로 14길 6 남도빌딩 3층
+        </footer>
+    </div>
+</body>
+</html>

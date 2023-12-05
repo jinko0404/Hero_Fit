@@ -1,0 +1,82 @@
+#container{
+    width: 1200px;
+    margin: 0 auto;/*가운데 정렬*/
+    background-color: #fff;
+    }
+    a{
+        text-decoration: none;/*하이퍼 링크 밑줄 없애기*/
+        color: #000;
+    }
+    a:visited {
+        color : black;
+    }
+    ul{
+        list-style-type: none; /*불릿 기호 없애기*/
+    }
+    header{
+        width: 100%;
+        height: 80px;/*header 영역 크기 설정*/
+    }
+    #logo{
+    width:190px;
+    height:80px;
+    line-height:20px;/*행간 높이 조정*/
+    padding-left:0px;/*왼쪽 여백 주기*/
+    float:left;
+    background-color: tomato;
+    }
+        #logo h1{
+            font-family: "impact", cursive;
+            color: #000;
+            font-weight: 400;
+            font-size: 50px;
+            text-shadow: 0 0 4px #ccc
+            , 0 -5px 4px #ff3
+            , 2px -10px 6px #fd3
+            , -2px -15px 11px #f80
+            , 2px -19px 18px #f20;
+            text-align: center;
+            
+        }
+    .search {  
+        position: relative;
+    }
+
+    #search{
+        width: 40%;
+        height: 35px;
+        margin-left: 100px;
+    }
+    #search_icon{
+        position : absolute;
+        width: 30px;
+        height: 30px;
+        top: 4px;
+        right: 36%;
+        margin: 0;
+    }
+    .mainMenu{
+        float: left;
+    }
+        #mainMenu li{
+            float: left;
+        }
+            #mainMenu>li>a{
+                font-size:1.1em;
+                color:#000;
+                font-weight:600;
+                padding : 10px 60px
+            }
+    .loginMenu{
+        float: left;
+    }
+        #loginMenu li{
+            float: left;
+        }
+            #loginMenu>li>a{
+                font-size:1.1em;
+                color:#000;
+                font-weight:600;
+                padding : 10px 30px;
+                margin-left: 30px;
+            }

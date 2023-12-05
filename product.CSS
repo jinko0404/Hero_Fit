@@ -1,0 +1,19 @@
+.product-row {
+    display: flex;
+}
+
+.product-item {
+    flex: 0 0 calc(33.333% - 10px); /* 각 제품이 33.333%의 너비를 차지하도록 설정, 여유 여백은 10px로 설정 */
+    margin-bottom: 20px; /* 원하는 간격을 설정하세요 */
+    box-sizing: border-box; /* 여백이 포함된 크기를 지정합니다. */
+}
+
+.product-details {
+    text-align: left; /* 내부 내용을 가운데 정렬할 수 있도록 설정 */
+}
+#Pname{
+    font-size: 30px;
+}
+.discounted-price{
+    font-size: 20px;
+}

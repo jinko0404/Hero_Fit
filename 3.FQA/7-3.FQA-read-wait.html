@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히어로핏</title>
+    <link rel="stylesheet" href="../base_no_login.CSS">
+    <style>
+        #readLayer{
+            width: 1000px;
+            text-align: center;
+            margin: auto;
+        }
+        #readHeader1{
+            display: flex;
+            justify-content: space-around;
+        }
+        #readHeader1{
+            float: left;
+        }
+        #title{
+            position: relative;
+            right: 0px;
+            font-weight: 1000;
+        }
+        #title2{
+            position: relative;
+            right: 30px;
+            font-weight: 1000;
+        }
+        #writer{
+            position: relative;
+            left: 300px;
+        }
+        #containerRead{
+            display: flex;
+        }
+        #readMain1{
+            width: 500px;
+            height: 700px;
+            margin-right: 20px;
+            border: 1px solid lightgray;
+            text-align: left;
+            padding: 15px;
+        }
+        #readMain2{
+            width: 500px;
+            height: 700px;
+            margin-left: 20px;
+            border: 1px solid lightgray;
+            text-align: left;
+            padding: 15px;
+        }
+        #readFooter{
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #back{
+            color: white;
+            margin-bottom: 8px;
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 700;
+            background-color: grey;
+            float: right;
+        }
+        #correction,#delete{
+            margin-bottom: 8px;
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 700;
+            background-color: lightgray;
+        }
+        button{
+            border-radius: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="../1.main.html">
+                    <h1>HERO FIT</h1>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="품목 및 브랜드 명으로 검색해주세요">
+                <a href="#">
+                    <img src="../img/free-icon-magnifier-2866321.png" alt="검색" id = "search_icon">
+                </a>
+                </div>
+            <div class="mainMenu">
+                <ul id ="mainMenu">
+                    <li><a href="../2.store.html">스토어</a></li>
+                    <li><a href="./6.community.html">커뮤니티</a></li>
+                    <li><a href="../3.FQA/7.FQA.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="loginMenu">
+                <ul id="loginMenu">
+                    <li><a href="../8.login.html">로그인</a></li>
+                    <li><a href="../9.signUp.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+        <hr width ="100%">
+        <main>
+            <div id="readLayer">
+                <div id="Header">
+                    <div id="readHeader1">
+                        <span id="title"><b>문의내용</b></span>
+                        <span id="writer">작성자 : 이순신</span>
+                        
+                    </div>
+                    
+                    <div id="readHeader2">
+                        <span id="title2"><b>답변내용</b></span>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div id="containerRead">
+                    <div id="readMain1">
+                        이 숫자로 어떻게 몇백 척을 침몰시키란거임? 더 보내주셈
+                    </div>
+                    <div id="readMain2">
+                        답변 대기 중 입니다.
+                    </div>
+                </div>
+                <div id="readFooter">
+                    <a href="./7.FQA.html"><button id="back">목록으로</button></a>
+                </div>
+            </div>
+        </main>
+        <hr width ="100%">
+        <footer>
+            상호 : (주)히어로 핏 | 사업자 등록 번호 : 000-00-00000 | 대표전화 : 7777-7777<br>
+            주소 : 서울특별시 강남구 테헤란로 14길 6 남도빌딩 3층
+        </footer>
+    </div>
+</body>
+</html>

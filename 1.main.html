@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히어로핏</title>
+    <link rel="stylesheet" href="./base_no_login.CSS">
+    <style>
+        * {box-sizing:border-box}
+
+        /* Slideshow container */
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+        display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+
+        #week_Lank{
+            float: left;
+            width : 50%;
+        }
+        #week_Lank_number1{
+            font-size: 50px;
+            font-family: "굴림체";
+            color: red;
+        }
+        #name{
+            vertical-align : top;
+            font-size : 47px;
+            line-height: 50px;
+        }
+        #Tag{
+            font-size: 20px;
+            color: #717171;
+            position: relative;
+            right: 180px;
+            position: relative;
+            top:50px;
+        }
+        #Tag2{
+            font-size: 20px;
+            color: #717171;
+            position: relative;
+            right: 290px;
+            position: relative;
+            top:50px;
+        }
+        #Tag3{
+            font-size: 20px;
+            color: #717171;
+            position: relative;
+            right: 270px;
+            position: relative;
+            top:50px;
+        }
+        #week_Lank_number2{
+            font-size: 50px;
+            font-family: "굴림체";
+            
+        }
+        #week_Lank_number3{
+            font-size: 50px;
+            font-family: "굴림체";
+        }
+
+                #week_Lank div img{
+                vertical-align : middle;
+                margin-left: 15px;
+            }
+        #protein_Lank{
+            float: left;
+            width : 50%;
+            
+        }
+                #protein_Lank div img{
+                    vertical-align : middle;
+                    margin-left: 15px;
+                }
+                .arrow1 {
+                    border: solid red;
+                    border-width: 0 3px 3px 0;
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    padding: 3px;
+                    position: relative;
+                    left : 170px;
+                    bottom: 30px;
+                    transform: rotate(-135deg);
+                    -webkit-transform: rotate(-135deg);
+                }
+                .arrow2 {
+                    border: solid blue;
+                    border-width: 0 3px 3px 0;
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    padding: 3px;
+                    position: relative;
+                    left : -25px;
+                    bottom: 0px;
+                    transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                }
+                .arrow3 {
+                    border: solid gray;
+                    border-width: 0px 0px 3px 0px;
+                    width: 40px;
+                    display: inline-block;
+                    padding: 3px;
+                    position: relative;
+                    left : 150px;
+                    bottom: 50px;
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                }
+                .arrow4 {
+                    border: solid blue;
+                    border-width: 0 3px 3px 0;
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    padding: 3px;
+                    position: relative;
+                    left : 770px;
+                    bottom: 140px;
+                    transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                }
+                .arrow5 {
+                    border: solid gray;
+                    border-width: 0px 0px 3px 0px;
+                    width: 40px;
+                    display: inline-block;
+                    padding: 3px;
+                    position: relative;
+                    left : 160px;
+                    bottom: 60px;
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                }
+                .arrow6 {
+                    border: solid red;
+                    border-width: 0 3px 3px 0;
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    padding: 3px;
+                    position: relative;
+                    left : 750px;
+                    bottom: 130px;
+                    transform: rotate(-135deg);
+                    -webkit-transform: rotate(-135deg);
+                }
+        #dietFoodGood{
+            font-size: 50px;
+            float: left;
+        }
+            #dietFood img{
+                vertical-align : Top;
+            }
+            #dietFoodImg{
+                float: left;
+                margin: 20px;
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="1.main.html">
+                    <h1>HERO FIT</h1>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="품목 및 브랜드 명으로 검색해주세요">
+                <a href="#">
+                    <img src="./img/free-icon-magnifier-2866321.png" alt="검색" id = "search_icon">
+                </a>
+                </div>
+            <div class="mainMenu">
+                <ul id ="mainMenu">
+                    <li><a href="./2.store.html">스토어</a></li>
+                    <li><a href="./2.community/6.community.html">커뮤니티</a></li>
+                    <li><a href="./3.FQA/7.FQA.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="loginMenu">
+                <ul id="loginMenu">
+                    <li><a href="./8.login.html">로그인</a></li>
+                    <li><a href="./9.signUp.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+        <hr width ="100%">
+        <main>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+            
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                    <img src="./img/banner_slide (1).jpg" style="width:100%"
+                    height = "500px">
+                    <div class="text">Caption Text</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                    <img src="./img/banner_slide (2).jpg" style="width:100%"
+                    height = "500px">
+                    <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                    <img src="./img/banner_slide (3).jpg" style="width:100%"
+                    height = "500px">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./img/banner_slide (4).jpg" style="width:100%"
+                    height = "500px">
+                    <div class="text">Caption four</div>
+                    </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <div id = "week_Lank">
+                <h3>스토어 주간 랭킹</h3>
+                <hr width ="90%" align = "left">
+                <div>
+                    <div>
+                        <a href="#">
+                            <b id = "week_Lank_number1">1</b>
+                            <img src="./img/week_best_lank (1).jfif" alt="베스트1" width = "100px" height="150px">
+                            <span id ="name">아령 6Kg</span>
+                        </a>
+                        <span id = "Tag">#아령#운동기구<span>
+                            <i class="arrow1"></i>
+                    </div><hr width = 90% align="left">
+                    <div>
+                        <b id = "week_Lank_number2">2</b>
+                        <a href="#">
+                        <img src="./img/week_best_lank (2).jfif" alt="베스트2" width = "100px" height="150px">
+                        <span id ="name">푸쉬업바</span>
+                        </a>
+                        <span id = "Tag">#팔굽혀펴기#홈트</span>
+                        <i class="arrow2"></i>
+                        </div><hr width = 90% align="left">
+                    <div>
+                        <b id = "week_Lank_number3">3</b>
+                        <a href="#">
+                        <img src="./img/week_best_lank (3).jfif" alt="베스트3" width = "100px" height="150px">
+                        <span id ="name">닭가슴살</span>
+                        </a>
+                        <span id = "Tag">#닭가슴살#단백질<span></span>
+                        <i class="arrow3"></i>
+                        </div><br>
+                </div>
+            </div>
+            <div id = "protein_Lank">
+                <h3>보충제 랭킹</h3>
+                <hr width ="90%" align = "left">
+                <div>
+                    <div>
+                        <a href="#">
+                            <b id = "week_Lank_number1">1</b>
+                            <img src="./img/protein_lank (1).jfif" alt="베스트1" width = "100px" height="150px">
+                            <span id ="name">단백질 쉐이크</span>
+                        </a>
+                        <span id = "Tag2">#단백질 #득근<span>
+                        <i class="arrow4"></i>
+                    </div><hr width = 90% align="left">
+                    <div>
+                        <b id = "week_Lank_number2">2</b>
+                        <a href="#">
+                        <img src="./img/protein_lank (2).jfif" alt="베스트2" width = "100px" height="150px">
+                        <span id ="name">아르기닌</span>
+                        </a>
+                        <span id = "Tag">#근성장#근합성<span></span>
+                        <i class="arrow5"></i>
+                        </div><hr width = 90% align="left">
+                    <div>
+                        <b id = "week_Lank_number3">3</b>
+                        <a href="#">
+                        <img src="./img/protein_lank (3).jfif" alt="베스트3" width = "100px" height="150px">
+                        <span id ="name">아르기닌분말</span>
+                        </a>
+                        <span id = "Tag3">#벌크업#부스터<span></span>
+                        <i class="arrow6"></i>
+                        </div><br>
+                </div>
+            </div>
+            <hr>
+            <div id = "dietFood">
+                <span id = "dietFoodGood">다이어트 식품 추천</span>
+                <a href="#">
+                <figure id = "dietFoodImg">
+                <img src="./img/diet_food (1).jfif" alt="음식1" width = "200px" height="300px">
+                <figcaption><b>닭가슴살 야채 볶음밥</b> 20% <br><br> 6,000원</figcaption>
+                </figure></a>
+                <a href="#">
+                <figure id = "dietFoodImg">
+                <img src="./img/diet_food (1).jpg" alt="음식2" width = "200px" height="300px">
+                <figcaption><b>곤약 매콤 비빔면</b> &nbsp;&nbsp;&nbsp;&nbsp;20% <br><br> 2,000원</figcaption>
+                </figure></a>
+                <a href="#">
+                <figure id = "dietFoodImg">
+                <img src="./img/diet_food (2).jpg" alt="음식3" width = "200px" height="300px">
+                <figcaption><b>다이어트 도시락</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15%<br><br>4,500원</figcaption>
+                </figure></a>
+            </div>
+            <div id = "dietFood">
+                <span id = "dietFoodGood">바겐세일 상품 추천</span>
+                <a href="#">
+                <figure id = "dietFoodImg">
+                <img src="./img/Sale (1).jfif" alt="음식1" width = "200px" height="300px">
+                <figcaption><b>히어로 파워 벨트</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20% <br><br> 44,000원</figcaption>
+                </figure>
+                </a>
+                <a href="#">
+                <figure id = "dietFoodImg">
+                <img src="./img/Sale (2).jfif" alt="음식2" width = "200px" height="300px">
+                <figcaption><b>프로텍트 손목 보호대</b> &nbsp;20% <br><br> 32,000원</figcaption>
+                </figure></a>
+                <a href="#">
+                <figure id = "dietFoodImg">
+                <img src="./img/Sale (3).jfif" alt="음식3" width = "200px" height="300px">
+                <figcaption><b>슈퍼 파워 스트랩</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15%<br><br>44,500원</figcaption>
+                </figure>
+                </a>
+            </div>
+        </main>
+        <hr width ="100%">
+        <footer>
+            상호 : (주)히어로 핏 | 사업자 등록 번호 : 000-00-00000 | 대표전화 : 7777-7777<br>
+            주소 : 서울특별시 강남구 테헤란로 14길 6 남도빌딩 3층
+        </footer>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </div>
+</body>
+</html>

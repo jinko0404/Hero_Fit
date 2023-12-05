@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히어로핏</title>
+    <link rel="stylesheet" href="./base_no_login.CSS">
+    <link rel="stylesheet" href="product.CSS">
+    <style>
+        .pc-top-categories {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .pc-top-categories-items {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                row-gap: 12px;
+                column-gap: 11px;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .pc-top-categories-item {
+                flex: 0 0 calc((100% / 7) - 11px);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: calc((100% / 7) - 11px);
+                height: 40px;
+                margin: 0;
+                padding: 0;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            .pc-top-categories-item > a {
+                flex: 1 1 auto;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0 0 0 15px;
+                background: rgba(243,243,243,1);
+                box-sizing: border-box;
+            }
+            .pc-top-categories-item > a:hover {
+                background: rgba(243,243,243,0.7);
+            }
+            .pc-top-categories-item > a::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 5px;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background: #dbdbdb;
+            }
+            .pc-top-categories-item > a > span {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 120%;
+                color: #333;
+            }
+            .pagination {
+            display: inline-block;
+            }
+                .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                border-radius: 5px;
+                }
+                    .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                    border-radius: 5px;
+                    transition: background-color .3s;
+                    border: 1px solid #ddd;
+                    }
+                    .pagination a:hover:not(.active) {background-color: #ddd;}
+                    .center {
+                    text-align: center;
+                    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="1.main.html">
+                    <h1>HERO FIT</h1>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="품목 및 브랜드 명으로 검색해주세요">
+                <a href="#">
+                    <img src="./img/free-icon-magnifier-2866321.png" alt="검색" id = "search_icon">
+                </a>
+                </div>
+            <div class="mainMenu">
+                <ul id ="mainMenu">
+                    <li><a href="./2.store.html">스토어</a></li>
+                    <li><a href="./2.community/6.community.html">커뮤니티</a></li>
+                    <li><a href="./3.FQA/7.FQA.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="loginMenu">
+                <ul id="loginMenu">
+                    <li><a href="../1.main.html">로그아웃</a></li>
+                    <li><a href="./6.myPage.html">마이페이지</a></li>
+                </ul>
+            </div>
+        </header>
+        <hr width ="100%">
+        <main>
+            <div class="pc-top-categories-items">
+                <img src="./img/storeMenu.png" alt="storeMenu" width="40px" height="40px">
+            <div class="pc-top-categories-item"><a href="./2.store.html"><span>메인으로</span></a></div>
+            <div class="pc-top-categories-item"><a href="./2-2.store_protein-page1.html"><span>이전으로</span></a></div>
+            </div>
+            <h2>메인>보충제>오메가3</h2>
+            <hr>
+            <div class="product-container">
+                <!-- 1행 -->
+                <div class="product-row">
+                    <!-- 제품 1 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/omega3/1000x1000_오메가_연출컷3.jpg" alt="오메가3" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">삼대오백 RTG 오메가3</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">12,900 원</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 제품 2 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/omega3/Animal_Omega_30_packs_(30_serv).png" alt="오메가3" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">애니멀 오메가 30팩</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">42,484 원</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 제품 3 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/omega3/ATP_오메가-3_트라이글리세라이드_200ml_1.jpg" alt="오메가3" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">ATP 오메가3 200ml</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">53,595 원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- 추가 행과 제품들 ... -->
+            </div>
+            
+                <!-- 2행 -->
+                <div class="product-row">
+                    <!-- 제품 4 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/omega3/UltraOmega_3.jpg" alt="오메가3" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">울트라 오메가3</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">18,301 원</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 제품 5 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/omega3/골든_오메가_피쉬오일_1000mg.png" alt="오메가3" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">골든 오메가 피쉬오일</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">31,373 원</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- 제품 6 -->
+                    <div class="product-item">
+                        <a href="./3.productPage.html" class="product-image-link">
+                            <img src="./img/omega3/슈퍼_오메가_3-6-9,_1200mg.png" alt="오메가3" width="300px" height="300px" />
+                        <div class="product-details">
+                                <div id = "Pname">슈퍼 오메가 3-6-9</div>
+                        </a>
+                            <div class="price">
+                                <span class="discounted-price">24,837 원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <!-- 1행 -->
+                    <div class="product-row">
+                        <!-- 제품 1 -->
+                        <div class="product-item">
+                            <a href="./3.productPage.html" class="product-image-link">
+                                <img src="./img/omega3/오메가_3,_1000mg_200소프트젤.png" alt="오메가3" width="300px" height="300px" />
+                            <div class="product-details">
+                                    <div id = "Pname">오메가3 1000mg</div>
+                            </a>
+                                <div class="price">
+                                    <span class="discounted-price">15,033 원</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- 제품 2 -->
+                        <div class="product-item">
+                            <a href="./3.productPage.html" class="product-image-link">
+                                <img src="./img/omega3/피쉬오일_1200_mg_300소프트젤.png" alt="오메가3" width="300px" height="300px" />
+                            <div class="product-details">
+                                    <div id = "Pname">피쉬오일 1200mg</div>
+                            </a>
+                                <div class="price">
+                                    <span class="discounted-price">30,065 원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 추가 행과 제품들 ... -->
+                </div>
+            
+            </div>
+        </main>
+        <hr width ="100%">
+        <footer>
+            상호 : (주)히어로 핏 | 사업자 등록 번호 : 000-00-00000 | 대표전화 : 7777-7777<br>
+            주소 : 서울특별시 강남구 테헤란로 14길 6 남도빌딩 3층
+        </footer>
+    </div>
+</body>
+</html>
